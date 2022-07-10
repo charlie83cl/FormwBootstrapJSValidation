@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Click the button to open a new window and add some content.</p>
+
+    <button onclick="nuevaventana()">Try it</button>
+    
+    <p id="demo">Click the button to replace this document with new content.</p>
+
+    <button onclick="nuevomensaje()">Try it</button>
+
+    <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+
+<form id="frm1" action="testing.html">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="submitform()" value="Submit">
+</form>
+
+<form id="frm2" action="/testing.html" method="get">
+    First name: <input type="text" name="fname" value="Donald"><br>
+    Last name: <input type="text" name="lname" value="Duck"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+  <p>Click "Try it" to display the value of the form method.</p>
+  
+  <button onclick="metodoformulario()">Try it</button>
+  
+  <p id="demaiden"></p>
+  
+    <script src="./assets/js/funciones.js"></script>
+  </body>
+</html>
