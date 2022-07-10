@@ -10,13 +10,12 @@ function validarFormulario(evento) {
     return;
   }
   var email = document.getElementById('email').value;
-  if(email.length == 0) {
-    alert('No has escrito nada en el Email');
+    if(email.length == 0) {
+    alert('No has escrito nada en el Email')
     return;
   }
-  var subject = document.getElementById('subject').value;
-  if(subject.length == 0) {
-    alert('No has escrito nada en el Asunto');
+    else if (email.match(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i) == null) {
+    alert("El email no es correcto");
     return;
   }
   var mensaje = document.getElementById('message').value;
@@ -24,6 +23,7 @@ function validarFormulario(evento) {
     alert('No has escrito nada en el Mensaje');
     return;
   }
+    alert('FORMULARIO ENVIADO GRACIAS POR CONTACTARNOS');
   this.submit();
 }
 
